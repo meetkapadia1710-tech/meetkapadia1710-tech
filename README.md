@@ -295,50 +295,6 @@ Design and delivery of production web platforms for real clients across industri
 
 ---
 
-## 🟣 Contribution Snake — Setup
-
-<details>
-<summary><b>⚙️ One-time setup required (the snake now lives in the header above)</b></summary>
-<br/>
-
-This image only renders after a GitHub Action generates it — it will show broken until you add this workflow to your **profile repo** (`meetkapadia1710-tech/meetkapadia1710-tech`), at `.github/workflows/snake.yml`:
-
-```yaml
-name: Generate Snake
-
-on:
-  schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
-  push:
-    branches:
-      - main
-
-jobs:
-  generate:
-    permissions:
-      contents: write
-    runs-on: ubuntu-latest
-    steps:
-      - uses: Platane/snk@v3
-        with:
-          github_user_name: meetkapadia1710-tech
-          outputs: |
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-            dist/github-contribution-grid-snake.svg
-      - uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
-
-Push that file, let the workflow run once (or trigger it manually from the Actions tab), and the `output` branch + SVG will exist — the snake in the header above will then render.
-
-</details>
-
----
 
 ## 🟣 Current Focus
 
