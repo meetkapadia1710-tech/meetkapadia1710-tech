@@ -279,28 +279,19 @@ Design and delivery of production web platforms for real clients across industri
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=meetkapadia1710-tech&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0F0C29&title_color=A78BFA&icon_color=8B5CF6&text_color=C4B5FD&ring_color=7C3AED&cache_seconds=1800" width="49%"/>
-<img src="https://streak-stats.demolab.com?user=meetkapadia1710-tech&theme=tokyonight" width="49%"/>
+<img src="https://github-readme-stats.vercel.app/api?username=meetkapadia1710-tech&show_icons=true&theme=tokyonight&hide_border=true&cache_seconds=86400" width="49%" />
 
-<br/>
+<img src="https://streak-stats.demolab.com?user=meetkapadia1710-tech&theme=tokyonight&hide_border=true" width="49%" />
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=meetkapadia1710-tech&layout=compact&theme=tokyonight&hide_border=true&bg_color=0F0C29&title_color=A78BFA&text_color=C4B5FD&cache_seconds=1800" width="60%"/>
+<br><br>
 
-> If a card above shows a broken-image icon on first load, it's almost always the shared `vercel.app` instance being rate-limited or GitHub's image proxy timing out — reload the page or wait a few minutes. It resolves itself; no config is wrong.
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=meetkapadia1710-tech&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&cache_seconds=86400" width="48%" />
 
 </div>
-
----
 
 ## 🟣 GitHub Trophies
 
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=meetkapadia1710-tech&theme=discord&no-frame=true&row=2&column=4"/>
-
-</div>
-
----
+<img src="https://github-profile-trophy.vercel.app/?username=meetkapadia1710-tech&theme=algolia&no-frame=true&margin-w=15&margin-h=15"/>
 
 ## 🟣 Contribution Activity
 
