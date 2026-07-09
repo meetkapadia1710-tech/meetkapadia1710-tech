@@ -13,21 +13,10 @@
 
 <br/><br/>
 
-<a href="https://miniresumemeet.vercel.app">
-  <img src="https://img.shields.io/badge/Portfolio-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white&labelColor=1E1B4B"/>
-</a>
-
-<a href="https://linkedin.com/in/meet-kapadia17">
-  <img src="https://img.shields.io/badge/LinkedIn-7C3AED?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=1E1B4B"/>
-</a>
-
-<a href="mailto:meetkapadia1710@gmail.com">
-  <img src="https://img.shields.io/badge/Email-6D28D9?style=for-the-badge&logo=gmail&logoColor=white&labelColor=1E1B4B"/>
-</a>
-
-<a href="https://github.com/meetkapadia1710-tech">
-  <img src="https://img.shields.io/badge/GitHub-5B21B6?style=for-the-badge&logo=github&logoColor=white&labelColor=1E1B4B"/>
-</a>
+<a href="https://miniresumemeet.vercel.app"><img src="https://img.shields.io/badge/Portfolio-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white&labelColor=1E1B4B"/></a>
+<a href="https://linkedin.com/in/meet-kapadia17"><img src="https://img.shields.io/badge/LinkedIn-7C3AED?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=1E1B4B"/></a>
+<a href="mailto:meetkapadia1710@gmail.com"><img src="https://img.shields.io/badge/Email-6D28D9?style=for-the-badge&logo=gmail&logoColor=white&labelColor=1E1B4B"/></a>
+<a href="https://github.com/meetkapadia1710-tech"><img src="https://img.shields.io/badge/GitHub-5B21B6?style=for-the-badge&logo=github&logoColor=white&labelColor=1E1B4B"/></a>
 
 <br/><br/>
 
@@ -38,12 +27,9 @@
 <br/><br/>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/meetkapadia1710-tech/meetkapadia1710-tech/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/meetkapadia1710-tech/meetkapadia1710-tech/output/github-contribution-grid-snake.svg">
-  <img alt="GitHub Contribution Snake"
-       src="https://raw.githubusercontent.com/meetkapadia1710-tech/meetkapadia1710-tech/output/github-contribution-grid-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/meetkapadia1710-tech/meetkapadia1710-tech/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/meetkapadia1710-tech/meetkapadia1710-tech/output/github-contribution-grid-snake.svg">
+  <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/meetkapadia1710-tech/meetkapadia1710-tech/output/github-contribution-grid-snake.svg" />
 </picture>
 
 </div>
@@ -63,6 +49,357 @@ focus: ["Systems Engineering", "AI Agents & LLM Orchestration", "Full-Stack Prod
 
 I'm a Computer Science undergraduate at **IIIT Vadodara** who builds production-grade, visually ambitious software — end to end. My work spans **distributed and concurrent systems**, **AI/LLM-powered agents with persistent memory**, and **full-stack products** engineered with the same rigor as their design.
 
+I care about the full stack of *quality*: clean architecture, thread-safe systems, ATS-proof engineering discipline, and interfaces that feel deliberate rather than templated. Recent work includes a GitHub repository intelligence platform (monorepo, AI-grounded README generation), an offline-first voice AI assistant with a 29-tool orchestration layer, and a persistent-memory sales intelligence agent built at a hackathon.
+
+<table align="center">
+<tr>
+<td>
+
+**🎯 Open To**
+- Software Engineer Internships (SDE)
+- Full-Stack Engineering Roles
+- AI/ML & Applied LLM Engineering
+- Systems & Backend Engineering
+- Open Source Collaboration
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🟣 Tech Stack
+
+<div align="center">
+
+**Languages**
+
+<img src="https://skillicons.dev/icons?i=cpp,python,java,js,ts,c" />
+
+**Frontend**
+
+<img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,redux,threejs,html,css" />
+
+**Backend & Databases**
+
+<img src="https://skillicons.dev/icons?i=nodejs,express,fastapi,postgres,mongodb,sqlite,firebase,prisma,redis" />
+
+**Cloud, DevOps & Tooling**
+
+<img src="https://skillicons.dev/icons?i=docker,vercel,githubactions,git,github,vscode,figma,postman" />
+
+</div>
+
+---
+
+## 🟣 AI / ML Expertise
+
+<div align="center">
+
+| Domain | Proficiency | Details |
+|---|:---:|---|
+| **LLM Orchestration** | ⭐⭐⭐⭐⭐ | Multi-provider routing across Groq, Claude, OpenAI, Gemini & Ollama with swappable "brain" abstraction |
+| **Agentic Systems** | ⭐⭐⭐⭐☆ | Tool-calling agents (20–29 tools), event-driven architectures, thread-safe orchestration layers |
+| **Persistent / Vector Memory** | ⭐⭐⭐⭐☆ | Hindsight vector memory (retain · recall · reflect), semantic long-term memory with auto-extraction |
+| **RAG Pipelines** | ⭐⭐⭐⭐☆ | Retrieval-augmented generation over personal/document corpora |
+| **Voice AI** | ⭐⭐⭐⭐☆ | Wake-word detection (openWakeWord + Silero VAD), Whisper/faster-whisper transcription, streaming TTS with barge-in |
+| **AI-Grounded Code Intelligence** | ⭐⭐⭐⭐☆ | LLM-driven repository scoring & README generation grounded in real source code (Gemini-backed) |
+
+</div>
+
+---
+
+## 🟣 Featured Projects
+
+<details>
+<summary><b>🔹 RepoGrade — AI-Powered GitHub Repository Intelligence Platform</b></summary>
+<br/>
+
+A full monorepo platform that crawls GitHub repositories, scores them, and auto-generates or updates READMEs grounded in the actual codebase — built for repo owners, evaluators, recruiters, and organizations alike.
+
+| Aspect | Details |
+|---|---|
+| **Stack** | Turborepo · Next.js · Plasmo Browser Extension · GitHub Action · Drizzle ORM · PostgreSQL · Octokit GraphQL · Inngest · Upstash Redis · Auth.js · Google Gemini API |
+| **Scale** | Multi-surface monorepo — web app, browser extension, and CI/CD GitHub Action, all sharing a unified core |
+| **Performance** | Background job orchestration via Inngest with Redis-backed caching to minimize redundant GitHub API calls |
+| **Security** | Auth.js session management, scoped GitHub OAuth, and server-side Gemini calls to keep credentials off the client |
+| **Impact** | Equal-weight dual-purpose tool — repository rating *and* AI README generation as first-class features |
+| **Repository** | [github.com/meetkapadia1710-tech](https://github.com/meetkapadia1710-tech) |
+
+RepoGrade was engineered as a production monorepo from day one — shared types across the extension, web app, and Action, with an AI backend that grounds every generated artifact in real parsed source rather than generic templates.
+
+</details>
+
+<details>
+<summary><b>🔹 J.A.R.V.I.S — Offline-First Voice AI Assistant</b></summary>
+<br/>
+
+A modular, offline-first, voice-controlled personal AI assistant built solo in Python, with a live control-surface dashboard and a hardened concurrency model.
+
+| Aspect | Details |
+|---|---|
+| **Stack** | Python · FastAPI + WebSocket · Groq / Ollama / Claude / OpenAI / Gemini (swappable brain) · Whisper / faster-whisper · Kokoro / Piper / Edge TTS |
+| **Scale** | 9-module architecture (brain, voice, tools, memory, conversation, events, server, config) · 29 orchestrated tools |
+| **Performance** | Streaming sentence-level TTS synthesis with barge-in, latency instrumentation across the full pipeline |
+| **Security** | Atomic writes, locked singletons, config validation, and a production-hardening pass for loop resilience |
+| **Impact** | Fully offline-capable personal assistant with semantic long-term memory and RAG over personal documents |
+| **Repository** | [github.com/meetkapadia1710-tech/J.A.R.V.I.S](https://github.com/meetkapadia1710-tech/J.A.R.V.I.S) |
+
+Identified and resolved two real concurrency bugs during hardening — a speech-contention race without a global lock, and an auto-memory dedup race against stale snapshots — the kind of systems-level debugging that separates a demo from a product.
+
+</details>
+
+<details>
+<summary><b>🔹 Deal Intelligence Agent — Persistent-Memory Sales AI</b></summary>
+<br/>
+
+An AI sales assistant that remembers every interaction, tracks objections and stakeholder concerns, and generates strategic recommendations — built at HackBaroda.
+
+| Aspect | Details |
+|---|---|
+| **Stack** | React + TypeScript · Node.js/Express · Prisma + SQLite · Groq (Llama 3.3 70B) · Hindsight Vector Memory · Clerk Auth |
+| **Scale** | 7 API routes across a 4-tab experience (Chat, Timeline, Before/After, Reflect) |
+| **Performance** | Groq-backed low-latency inference with a dark industrial UI for real-time interaction |
+| **Security** | Clerk-managed authentication with scoped API access |
+| **Impact** | Before/After memory comparison as the central demo feature — makes persistent memory tangible in a live pitch |
+| **Repository** | [github.com/meetkapadia1710-tech](https://github.com/meetkapadia1710-tech) |
+
+Built around the mandatory Hindsight (vectorize-io) memory layer, using its three core primitives — retain, recall, and reflect — to turn raw conversation history into strategic sales insight.
+
+</details>
+
+<details>
+<summary><b>🔹 PlayHub — Cross-Platform Turf Booking Application</b></summary>
+<br/>
+
+A production-ready cricket & pickleball turf booking platform with role-based access for customers, venue owners, and admins.
+
+| Aspect | Details |
+|---|---|
+| **Stack** | React 19 · Capacitor (Android) · Firebase Cloud Functions · Zustand · Razorpay · Google Wallet (RS256 JWT) · FCM · Leaflet · Vitest |
+| **Scale** | Multi-venue booking across cricket & pickleball courts, three role tiers, full owner/admin dashboards |
+| **Performance** | Firebase Cloud Functions backend with real-time booking state via Zustand |
+| **Security** | RS256-signed Google Wallet passes, Razorpay-secured payment flow, role-gated navigation |
+| **Impact** | End-to-end booking flow from discovery to payment to digital-wallet pass issuance |
+| **Repository** | [github.com/meetkapadia1710-tech](https://github.com/meetkapadia1710-tech) |
+
+Full production source delivered across every screen and role — a real payments-and-ticketing product, not a prototype.
+
+</details>
+
+<details>
+<summary><b>🔹 PayMatrix — Group Expense Settlement with AI Bill Scanning</b></summary>
+<br/>
+
+A group expense-splitting app that uses a greedy debt-simplification algorithm and Gemini-powered receipt scanning to minimize the number of settlements required.
+
+| Aspect | Details |
+|---|---|
+| **Stack** | React 19 · Firebase · Google Gemini (bill scanning) |
+| **Scale** | Multi-user group expense graphs, resolved via greedy debt simplification |
+| **Performance** | Algorithmic minimization of settlement transactions per group |
+| **Security** | Firebase-authenticated multi-user data isolation |
+| **Impact** | Reduces N-way group debt into the minimum possible number of payments |
+| **Repository** | [github.com/meetkapadia1710-tech](https://github.com/meetkapadia1710-tech) |
+
+Combines a genuine algorithms problem (debt-graph simplification) with a practical AI feature (scan-a-receipt-to-split), rather than bolting AI on as a gimmick.
+
+</details>
+
+---
+
+## 🟣 Experience
+
+### Freelance Full-Stack Engineer — Independent Client Engagements
+`Ongoing`
+
+Design and delivery of production web platforms for real clients across industrial, real estate, and hospitality sectors — full ownership from architecture to deployment.
+
+**Scope of Work**
+- Delivered a corporate website for **BD Buildcon LLP**, an industrial EPC contractor, on Next.js 14
+- Built a cinematic Next.js + React Three Fiber + Lenis corporate site with 3D interaction
+- Engineered a premium real estate marketing site for **Solitaire Pallazzo** (Bharuch, Gujarat)
+- Delivered a loyalty PWA and staff attendance calendar system for **Mann Beauty Studio**
+- Built a full Restaurant POS system (**Spice Garden**) with delivery-platform integrations
+- Produced complete technical documentation (READMEs, architecture notes) for every delivered system
+
+**Skills:** `Next.js` `React Three Fiber` `TypeScript` `Firebase` `Tailwind CSS` `Client Communication` `Production Deployment`
+
+---
+
+## 🟣 Achievements
+
+<div align="center">
+
+| Recognition | Details |
+|---|---|
+| 🏆 **HackBaroda Participant** | Built and demoed *Deal Intelligence Agent*, a persistent-memory AI sales assistant, under hackathon time constraints |
+| 💻 **500+ LeetCode Problems Solved** | Consistent algorithmic problem-solving practice across difficulty tiers |
+| 📈 **CodeChef Rating — 1462** | Active competitive programming track record |
+| ⚙️ **Solo-Built Production Systems** | Architected and shipped multi-module systems (J.A.R.V.I.S, RepoGrade) independently, end to end |
+
+</div>
+
+---
+
+## 🟣 Certifications
+
+<div align="center">
+
+**Cloud & AI**
+
+<img src="https://img.shields.io/badge/Oracle-OCI%202025%20Generative%20AI%20Professional-F80000?style=flat-square&logo=oracle&logoColor=white&labelColor=1E1B4B"/>
+
+**Full-Stack Web Development**
+
+<img src="https://img.shields.io/badge/Apna%20College-Delta%20Full%20Stack%20(MERN)-8B5CF6?style=flat-square&logoColor=white&labelColor=1E1B4B"/>
+
+**AI Workshops**
+
+<img src="https://img.shields.io/badge/IIT%20Bombay-AI%20Workshop-7C3AED?style=flat-square&logoColor=white&labelColor=1E1B4B"/>
+
+</div>
+
+---
+
+## 🟣 Coding Profiles
+
+<div align="center">
+
+<a href="https://leetcode.com/Code-Hacker_17"><img src="https://img.shields.io/badge/LeetCode-500%2B%20Solved-FFA116?style=for-the-badge&logo=leetcode&logoColor=white&labelColor=1E1B4B"/></a>
+<a href="https://www.geeksforgeeks.org/profile/meetkapa9w1y"><img src="https://img.shields.io/badge/GeeksforGeeks-Profile-2F8D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white&labelColor=1E1B4B"/></a>
+<a href="https://www.codechef.com/users/neat_otters_97"><img src="https://img.shields.io/badge/CodeChef-Rating%201462-5B4638?style=for-the-badge&logo=codechef&logoColor=white&labelColor=1E1B4B"/></a>
+<a href="https://codolio.com/profile/Lucifer_17"><img src="https://img.shields.io/badge/Codolio-Unified%20Profile-8B5CF6?style=for-the-badge&labelColor=1E1B4B"/></a>
+
+</div>
+
+---
+
+## 🟣 GitHub Analytics
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=meetkapadia1710-tech&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0F0C29&title_color=A78BFA&icon_color=8B5CF6&text_color=C4B5FD&ring_color=7C3AED&cache_seconds=1800" width="49%"/>
+<img src="https://streak-stats.demolab.com?user=meetkapadia1710-tech&theme=tokyonight" width="49%"/>
+
+<br/>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=meetkapadia1710-tech&layout=compact&theme=tokyonight&hide_border=true&bg_color=0F0C29&title_color=A78BFA&text_color=C4B5FD&cache_seconds=1800" width="60%"/>
+
+> If a card above shows a broken-image icon on first load, it's almost always the shared `vercel.app` instance being rate-limited or GitHub's image proxy timing out — reload the page or wait a few minutes. It resolves itself; no config is wrong.
+
+</div>
+
+---
+
+## 🟣 GitHub Trophies
+
+<div align="center">
+
+<img src="https://github-profile-trophy.vercel.app/?username=meetkapadia1710-tech&theme=discord&no-frame=true&row=2&column=4"/>
+
+</div>
+
+---
+
+## 🟣 Contribution Activity
+
+<div align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=meetkapadia1710-tech&theme=github-compact" width="95%"/>
+
+</div>
+
+---
+
+## 🟣 Contribution Snake — Setup
+
+<details>
+<summary><b>⚙️ One-time setup required (the snake now lives in the header above)</b></summary>
+<br/>
+
+This image only renders after a GitHub Action generates it — it will show broken until you add this workflow to your **profile repo** (`meetkapadia1710-tech/meetkapadia1710-tech`), at `.github/workflows/snake.yml`:
+
+```yaml
+name: Generate Snake
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: meetkapadia1710-tech
+          outputs: |
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake.svg
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+Push that file, let the workflow run once (or trigger it manually from the Actions tab), and the `output` branch + SVG will exist — the snake in the header above will then render.
+
+</details>
+
+---
+
+## 🟣 Current Focus
+
+```yaml
+Current_Status:
+  Learning:
+    - "Advanced Probability and Statistics Modeling"
+    - "Enterprise-Level Object-Oriented Programming (Java/C++)"
+  Building:
+    - "Money - Mint: Comprehensive Finance Tracker Ecosystem"
+    - "Automated OCR-to-Database Extractor for JEE Questions"
+    - "RepoGrade — AI-grounded GitHub Intelligence Platform"
+    - "J.A.R.V.I.S — Offline-First Voice AI Assistant"
+  Exploring:
+    - "Advanced Relational Algebra configurations in DBMS"
+    - "Design and Analysis of Complex Sorting Algorithms"
+  Open_To:
+    - "Software Engineer Internships (SDE)"
+    - "Full-Stack & AI/ML Engineering Roles"
+    - "Systems & Backend Engineering"
+```
+
+---
+
+## 🟣 Connect
+
+<div align="center">
+
+<a href="mailto:meetkapadia1710@gmail.com"><img src="https://img.shields.io/badge/Gmail-6D28D9?style=for-the-badge&logo=gmail&logoColor=white&labelColor=1E1B4B"/></a>
+<a href="https://linkedin.com/in/meet-kapadia17"><img src="https://img.shields.io/badge/LinkedIn-7C3AED?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=1E1B4B"/></a>
+<a href="https://github.com/meetkapadia1710-tech"><img src="https://img.shields.io/badge/GitHub-5B21B6?style=for-the-badge&logo=github&logoColor=white&labelColor=1E1B4B"/></a>
+<a href="https://miniresumemeet.vercel.app"><img src="https://img.shields.io/badge/Portfolio-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white&labelColor=1E1B4B"/></a>
+
+</div>
+
+---
+
+<div align="center">
+
+*"Engineering is the art of turning ambition into something that compiles, scales, and ships."*
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:5B21B6,50:302B63,100:0F0C29&height=150&section=footer" width="100%"/>
+
+</div>
 I care about the full stack of *quality*: clean architecture, thread-safe systems, ATS-proof engineering discipline, and interfaces that feel deliberate rather than templated. Recent work includes a GitHub repository intelligence platform (monorepo, AI-grounded README generation), an offline-first voice AI assistant with a 29-tool orchestration layer, and a persistent-memory sales intelligence agent built at a hackathon.
 
 <table align="center">
