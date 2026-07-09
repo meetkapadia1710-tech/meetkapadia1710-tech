@@ -279,19 +279,11 @@ Design and delivery of production web platforms for real clients across industri
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=meetkapadia1710-tech&show_icons=true&theme=tokyonight&hide_border=true&cache_seconds=86400" width="49%" />
-
-<img src="https://streak-stats.demolab.com?user=meetkapadia1710-tech&theme=tokyonight&hide_border=true" width="49%" />
-
-<br><br>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=meetkapadia1710-tech&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&cache_seconds=86400" width="48%" />
+<img src="https://streak-stats.demolab.com?user=meetkapadia1710-tech&theme=tokyonight" width="49%"/>
 
 </div>
 
-## 🟣 GitHub Trophies
-
-<img src="https://github-profile-trophy.vercel.app/?username=meetkapadia1710-tech&theme=algolia&no-frame=true&margin-w=15&margin-h=15"/>
+---
 
 ## 🟣 Contribution Activity
 
