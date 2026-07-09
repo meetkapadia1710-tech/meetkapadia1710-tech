@@ -13,16 +13,38 @@
 
 <br/><br/>
 
-<a href="https://miniresumemeet.vercel.app"><img src="https://img.shields.io/badge/Portfolio-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white&labelColor=1E1B4B"/></a>
-<a href="https://linkedin.com/in/meet-kapadia17"><img src="https://img.shields.io/badge/LinkedIn-7C3AED?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=1E1B4B"/></a>
-<a href="mailto:meetkapadia1710@gmail.com"><img src="https://img.shields.io/badge/Email-6D28D9?style=for-the-badge&logo=gmail&logoColor=white&labelColor=1E1B4B"/></a>
-<a href="https://github.com/meetkapadia1710-tech"><img src="https://img.shields.io/badge/GitHub-5B21B6?style=for-the-badge&logo=github&logoColor=white&labelColor=1E1B4B"/></a>
+<a href="https://miniresumemeet.vercel.app">
+  <img src="https://img.shields.io/badge/Portfolio-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white&labelColor=1E1B4B"/>
+</a>
+
+<a href="https://linkedin.com/in/meet-kapadia17">
+  <img src="https://img.shields.io/badge/LinkedIn-7C3AED?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=1E1B4B"/>
+</a>
+
+<a href="mailto:meetkapadia1710@gmail.com">
+  <img src="https://img.shields.io/badge/Email-6D28D9?style=for-the-badge&logo=gmail&logoColor=white&labelColor=1E1B4B"/>
+</a>
+
+<a href="https://github.com/meetkapadia1710-tech">
+  <img src="https://img.shields.io/badge/GitHub-5B21B6?style=for-the-badge&logo=github&logoColor=white&labelColor=1E1B4B"/>
+</a>
 
 <br/><br/>
 
 <img src="https://komarev.com/ghpvc/?username=meetkapadia1710-tech&style=flat-square&color=8b5cf6&label=Profile+Views"/>
 <img src="https://img.shields.io/github/followers/meetkapadia1710-tech?style=flat-square&color=7c3aed&labelColor=1E1B4B&label=Followers"/>
 <img src="https://img.shields.io/github/stars/meetkapadia1710-tech?style=flat-square&color=6d28d9&labelColor=1E1B4B&label=Stars"/>
+
+<br/><br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/meetkapadia1710-tech/meetkapadia1710-tech/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/meetkapadia1710-tech/meetkapadia1710-tech/output/github-contribution-grid-snake.svg">
+  <img alt="GitHub Contribution Snake"
+       src="https://raw.githubusercontent.com/meetkapadia1710-tech/meetkapadia1710-tech/output/github-contribution-grid-snake.svg" />
+</picture>
 
 </div>
 
