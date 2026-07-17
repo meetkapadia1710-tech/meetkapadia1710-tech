@@ -20,6 +20,9 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
+      - name: Fix dist ownership
+        run: sudo chown -R $(id -u):$(id -g) dist
+
       - name: Generate stats card
         uses: stats-organization/github-readme-stats-action@v2
         with:
