@@ -98,7 +98,7 @@ I care about the full stack of *quality*: clean architecture, thread-safe system
 
 | Domain | Proficiency | Details |
 |---|:---:|---|
-| **LLM Orchestration** | ⭐⭐⭐⭐⭐ | Multi-provider routing across Groq, Claude, OpenAI, Gemini & Ollama with swappable "brain" abstraction |
+| **LLM Orchestration** | ⭐⭐⭐⭐⭐ | Multi-provider routing across Groq, OpenAI, Gemini & Ollama with swappable "brain" abstraction |
 | **Agentic Systems** | ⭐⭐⭐⭐☆ | Tool-calling agents (20–29 tools), event-driven architectures, thread-safe orchestration layers |
 | **Persistent / Vector Memory** | ⭐⭐⭐⭐☆ | Hindsight vector memory (retain · recall · reflect), semantic long-term memory with auto-extraction |
 | **RAG Pipelines** | ⭐⭐⭐⭐☆ | Retrieval-augmented generation over personal/document corpora |
@@ -124,7 +124,7 @@ A full monorepo platform that crawls GitHub repositories, scores them, and auto-
 | **Performance** | Background job orchestration via Inngest with Redis-backed caching to minimize redundant GitHub API calls |
 | **Security** | Auth.js session management, scoped GitHub OAuth, and server-side Gemini calls to keep credentials off the client |
 | **Impact** | Equal-weight dual-purpose tool — repository rating *and* AI README generation as first-class features |
-| **Repository** | [github.com/meetkapadia1710-tech](https://github.com/meetkapadia1710-tech) |
+| **Repository** | [github.com/meetkapadia1710-tech/RepoGrade](https://github.com/meetkapadia1710-tech/RepoGrade) |
 
 RepoGrade was engineered as a production monorepo from day one — shared types across the extension, web app, and Action, with an AI backend that grounds every generated artifact in real parsed source rather than generic templates.
 
@@ -138,7 +138,7 @@ A modular, offline-first, voice-controlled personal AI assistant built solo in P
 
 | Aspect | Details |
 |---|---|
-| **Stack** | Python · FastAPI + WebSocket · Groq / Ollama / Claude / OpenAI / Gemini (swappable brain) · Whisper / faster-whisper · Kokoro / Piper / Edge TTS |
+| **Stack** | Python · FastAPI + WebSocket · Groq / Ollama / OpenAI / Gemini (swappable brain) · Whisper / faster-whisper · Kokoro / Piper / Edge TTS |
 | **Scale** | 9-module architecture (brain, voice, tools, memory, conversation, events, server, config) · 29 orchestrated tools |
 | **Performance** | Streaming sentence-level TTS synthesis with barge-in, latency instrumentation across the full pipeline |
 | **Security** | Atomic writes, locked singletons, config validation, and a production-hardening pass for loop resilience |
@@ -162,7 +162,7 @@ An AI sales assistant that remembers every interaction, tracks objections and st
 | **Performance** | Groq-backed low-latency inference with a dark industrial UI for real-time interaction |
 | **Security** | Clerk-managed authentication with scoped API access |
 | **Impact** | Before/After memory comparison as the central demo feature — makes persistent memory tangible in a live pitch |
-| **Repository** | [github.com/meetkapadia1710-tech](https://github.com/meetkapadia1710-tech) |
+| **Repository** | [github.com/meetkapadia1710-tech/deal-intelligence-agent](https://github.com/meetkapadia1710-tech/deal-intelligence-agent) |
 
 Built around the mandatory Hindsight (vectorize-io) memory layer, using its three core primitives — retain, recall, and reflect — to turn raw conversation history into strategic sales insight.
 
@@ -181,7 +181,7 @@ A production-ready cricket & pickleball turf booking platform with role-based ac
 | **Performance** | Firebase Cloud Functions backend with real-time booking state via Zustand |
 | **Security** | RS256-signed Google Wallet passes, Razorpay-secured payment flow, role-gated navigation |
 | **Impact** | End-to-end booking flow from discovery to payment to digital-wallet pass issuance |
-| **Repository** | [github.com/meetkapadia1710-tech](https://github.com/meetkapadia1710-tech) |
+| **Repository** | [github.com/meetkapadia1710-tech/PickleRage_Booking](https://github.com/meetkapadia1710-tech/PickleRage_Booking) |
 
 Full production source delivered across every screen and role — a real payments-and-ticketing product, not a prototype.
 
@@ -271,6 +271,10 @@ Design and delivery of production web platforms for real clients across industri
 <a href="https://www.codechef.com/users/neat_otters_97"><img src="https://img.shields.io/badge/CodeChef-Rating%201462-5B4638?style=for-the-badge&logo=codechef&logoColor=white&labelColor=1E1B4B"/></a>
 <a href="https://codolio.com/profile/Lucifer_17"><img src="https://img.shields.io/badge/Codolio-Unified%20Profile-8B5CF6?style=for-the-badge&labelColor=1E1B4B"/></a>
 
+<br/><br/>
+
+<img src="https://leetcard.jacoblin.cool/Code-Hacker_17?theme=dark&font=Fira%20Code" width="48%"/>
+
 </div>
 
 ---
@@ -279,7 +283,10 @@ Design and delivery of production web platforms for real clients across industri
 
 <div align="center">
 
-<img src="https://streak-stats.demolab.com?user=meetkapadia1710-tech&theme=tokyonight" width="49%"/>
+<img src="https://raw.githubusercontent.com/meetkapadia1710-tech/meetkapadia1710-tech/output/github-streak-stats.svg" width="49%"/>
+<img src="https://raw.githubusercontent.com/meetkapadia1710-tech/meetkapadia1710-tech/output/github-stats.svg" width="49%"/>
+
+<img src="https://raw.githubusercontent.com/meetkapadia1710-tech/meetkapadia1710-tech/output/github-top-langs.svg" width="49%"/>
 
 </div>
 

@@ -1,4 +1,4 @@
-name: Generate Snake
+name: Generate Profile Cards
 
 on:
   schedule:
@@ -19,6 +19,29 @@ jobs:
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      - name: Generate stats card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=meetkapadia1710-tech&show_icons=true&theme=tokyonight&hide_border=true
+          path: dist/github-stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate top languages card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=meetkapadia1710-tech&layout=compact&theme=tokyonight&hide_border=true&langs_count=8
+          path: dist/github-top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate streak stats card
+        uses: DenverCoder1/github-readme-streak-stats@main
+        with:
+          options: user=meetkapadia1710-tech&theme=tokyonight&hide_border=true
+          path: dist/github-streak-stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: crazy-max/ghaction-github-pages@v4
         with:
