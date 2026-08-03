@@ -51,20 +51,14 @@ I'm a Computer Science undergraduate at **IIIT Vadodara** who builds production-
 
 I care about the full stack of *quality*: clean architecture, thread-safe systems, ATS-proof engineering discipline, and interfaces that feel deliberate rather than templated. Recent work includes a GitHub repository intelligence platform (monorepo, AI-grounded README generation), an offline-first voice AI assistant with a 29-tool orchestration layer, and a persistent-memory sales intelligence agent built at a hackathon.
 
-<table align="center">
-<tr>
-<td>
+<div align="center">
 
-**🎯 Open To**
-- Software Engineer Internships (SDE)
-- Full-Stack Engineering Roles
-- AI/ML & Applied LLM Engineering
-- Systems & Backend Engineering
-- Open Source Collaboration
+### 🎯 Open To
+**Software Engineer Internships (SDE)** • **Full-Stack Engineering Roles**<br/>
+**AI/ML & Applied LLM Engineering** • **Systems & Backend Engineering**<br/>
+**Open Source Collaboration**
 
-</td>
-</tr>
-</table>
+</div>
 
 ---
 
@@ -94,8 +88,6 @@ I care about the full stack of *quality*: clean architecture, thread-safe system
 
 ## 🟣 AI / ML Expertise
 
-<div align="center">
-
 | Domain | Proficiency | Details |
 |---|:---:|---|
 | **LLM Orchestration** | ⭐⭐⭐⭐⭐ | Multi-provider routing across Groq, OpenAI, Gemini & Ollama with swappable "brain" abstraction |
@@ -105,15 +97,13 @@ I care about the full stack of *quality*: clean architecture, thread-safe system
 | **Voice AI** | ⭐⭐⭐⭐☆ | Wake-word detection (openWakeWord + Silero VAD), Whisper/faster-whisper transcription, streaming TTS with barge-in |
 | **AI-Grounded Code Intelligence** | ⭐⭐⭐⭐☆ | LLM-driven repository scoring & README generation grounded in real source code (Gemini-backed) |
 
-</div>
-
 ---
 
 ## 🟣 Featured Projects
 
 <details>
 <summary><b>🔹 RepoGrade — AI-Powered GitHub Repository Intelligence Platform</b></summary>
-<br/>
+
 
 A full monorepo platform that crawls GitHub repositories, scores them, and auto-generates or updates READMEs grounded in the actual codebase — built for repo owners, evaluators, recruiters, and organizations alike.
 
@@ -132,7 +122,7 @@ RepoGrade was engineered as a production monorepo from day one — shared types 
 
 <details>
 <summary><b>🔹 J.A.R.V.I.S — Offline-First Voice AI Assistant</b></summary>
-<br/>
+
 
 A modular, offline-first, voice-controlled personal AI assistant built solo in Python, with a live control-surface dashboard and a hardened concurrency model.
 
@@ -151,7 +141,7 @@ Identified and resolved two real concurrency bugs during hardening — a speech-
 
 <details>
 <summary><b>🔹 Deal Intelligence Agent — Persistent-Memory Sales AI</b></summary>
-<br/>
+
 
 An AI sales assistant that remembers every interaction, tracks objections and stakeholder concerns, and generates strategic recommendations — built at HackBaroda.
 
@@ -170,7 +160,7 @@ Built around the mandatory Hindsight (vectorize-io) memory layer, using its thre
 
 <details>
 <summary><b>🔹 PlayHub — Cross-Platform Turf Booking Application</b></summary>
-<br/>
+
 
 A production-ready cricket & pickleball turf booking platform with role-based access for customers, venue owners, and admins.
 
@@ -229,16 +219,12 @@ Design and delivery of production web platforms for real clients across industri
 
 ## 🟣 Achievements
 
-<div align="center">
-
 | Recognition | Details |
 |---|---|
 | 🏆 **HackBaroda Participant** | Built and demoed *Deal Intelligence Agent*, a persistent-memory AI sales assistant, under hackathon time constraints |
 | 💻 **500+ LeetCode Problems Solved** | Consistent algorithmic problem-solving practice across difficulty tiers |
 | 📈 **CodeChef Rating — 1462** | Active competitive programming track record |
 | ⚙️ **Solo-Built Production Systems** | Architected and shipped multi-module systems (J.A.R.V.I.S, RepoGrade) independently, end to end |
-
-</div>
 
 ---
 
