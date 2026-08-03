@@ -27,9 +27,9 @@
 <br/><br/>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/meetkapadia1710-tech/meetkapadia1710-tech/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/meetkapadia1710-tech/meetkapadia1710-tech/output/github-contribution-grid-snake.svg">
-  <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/meetkapadia1710-tech/meetkapadia1710-tech/output/github-contribution-grid-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/meetkapadia1710-tech/meetkapadia1710-tech/blob/output/github-contribution-grid-snake-dark.svg?raw=true">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/meetkapadia1710-tech/meetkapadia1710-tech/blob/output/github-contribution-grid-snake.svg?raw=true">
+  <img alt="GitHub Contribution Snake" src="https://github.com/meetkapadia1710-tech/meetkapadia1710-tech/blob/output/github-contribution-grid-snake.svg?raw=true" />
 </picture>
 
 </div>
@@ -269,10 +269,10 @@ Design and delivery of production web platforms for real clients across industri
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/meetkapadia1710-tech/meetkapadia1710-tech/output/github-streak-stats.svg" width="49%"/>
-<img src="https://raw.githubusercontent.com/meetkapadia1710-tech/meetkapadia1710-tech/output/github-stats.svg" width="49%"/>
+<img src="https://github.com/meetkapadia1710-tech/meetkapadia1710-tech/blob/output/github-streak-stats.svg?raw=true" width="49%"/>
+<img src="https://github.com/meetkapadia1710-tech/meetkapadia1710-tech/blob/output/github-stats.svg?raw=true" width="49%"/>
 
-<img src="https://raw.githubusercontent.com/meetkapadia1710-tech/meetkapadia1710-tech/output/github-top-langs.svg" width="49%"/>
+<img src="https://github.com/meetkapadia1710-tech/meetkapadia1710-tech/blob/output/github-top-langs.svg?raw=true" width="49%"/>
 
 </div>
 
