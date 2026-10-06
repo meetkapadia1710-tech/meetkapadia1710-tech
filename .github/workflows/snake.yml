@@ -2,55 +2,78 @@ name: Generate Profile Cards
 
 on:
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "17 */12 * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/snake.yml
+      - scripts/validate_profile_assets.py
+      - tests/test_profile_assets.py
 
 permissions:
   contents: write
 
+concurrency:
+  group: profile-cards
+  cancel-in-progress: false
+
 jobs:
   generate:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
 
     steps:
-      - uses: Platane/snk@v3
+      - name: Check out repository
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
-          github_user_name: meetkapadia1710-tech
+          persist-credentials: false
+
+      - name: Test asset validation
+        run: python3 -m unittest discover -s tests -v
+
+      - name: Generate contribution snakes
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Fix dist ownership
-        run: sudo chown -R $(id -u):$(id -g) dist
 
       - name: Generate stats card
-        uses: stats-organization/github-readme-stats-action@v2
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2.1.0
         with:
           card: stats
-          options: username=meetkapadia1710-tech&show_icons=true&theme=tokyonight&hide_border=true
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=tokyonight&hide_border=true
           path: dist/github-stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: "true"
 
       - name: Generate top languages card
-        uses: stats-organization/github-readme-stats-action@v2
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2.1.0
         with:
           card: top-langs
-          options: username=meetkapadia1710-tech&layout=compact&theme=tokyonight&hide_border=true&langs_count=8
+          options: username=${{ github.repository_owner }}&layout=compact&theme=tokyonight&hide_border=true&langs_count=8
           path: dist/github-top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: "true"
 
       - name: Generate streak stats card
-        uses: DenverCoder1/github-readme-streak-stats@main
+        uses: DenverCoder1/github-readme-streak-stats@d855de1a23fe45bdda5ffbc28a6d4b80b0f107e1 # main, reviewed 2026-10-07
         with:
-          options: user=meetkapadia1710-tech&theme=tokyonight&hide_border=true
+          options: user=${{ github.repository_owner }}&theme=tokyonight&hide_border=true
           path: dist/github-streak-stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: crazy-max/ghaction-github-pages@v4
+      - name: Validate generated SVGs before publishing
+        run: python3 scripts/validate_profile_assets.py dist
+
+      - name: Publish profile cards
+        uses: crazy-max/ghaction-github-pages@df5cc2bfa78282ded844b354faee141f06b41865 # v4
         with:
           target_branch: output
           build_dir: dist
+          keep_history: true
+          allow_empty_commit: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
