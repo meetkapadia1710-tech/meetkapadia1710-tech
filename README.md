@@ -348,3 +348,11 @@ Current_Status:
 <img alt="Purple wave footer" src="https://capsule-render.vercel.app/api?type=waving&color=0:5B21B6,50:302B63,100:0F0C29&height=150&section=footer" width="100%"/>
 
 </div>
+
+<details>
+<summary>Profile maintenance</summary>
+
+See [maintenance instructions](MAINTENANCE.md) for local checks, card generation,
+dependency updates, and troubleshooting.
+
+</details>

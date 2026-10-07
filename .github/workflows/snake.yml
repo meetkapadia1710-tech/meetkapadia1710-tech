@@ -12,7 +12,7 @@ on:
       - tests/test_profile_assets.py
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: profile-cards
@@ -47,6 +47,8 @@ jobs:
           options: username=${{ github.repository_owner }}&show_icons=true&theme=tokyonight&hide_border=true
           path: dist/github-stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+          # Use the core bundled in the action's frozen lockfile (currently 2.2.0).
+          core_version: ""
           fail_on_error: "true"
 
       - name: Generate top languages card
@@ -56,6 +58,7 @@ jobs:
           options: username=${{ github.repository_owner }}&layout=compact&theme=tokyonight&hide_border=true&langs_count=8
           path: dist/github-top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+          core_version: ""
           fail_on_error: "true"
 
       - name: Generate streak stats card
@@ -67,6 +70,30 @@ jobs:
 
       - name: Validate generated SVGs before publishing
         run: python3 scripts/validate_profile_assets.py dist
+
+      - name: Upload validated profile cards
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: profile-cards
+          path: dist/*.svg
+          if-no-files-found: error
+          retention-days: 1
+
+  publish:
+    needs: generate
+    # Manual runs from other branches may generate previews, but cannot publish.
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+
+    steps:
+      - name: Download validated profile cards
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: profile-cards
+          path: dist
 
       - name: Publish profile cards
         uses: crazy-max/ghaction-github-pages@df5cc2bfa78282ded844b354faee141f06b41865 # v4
