@@ -25,7 +25,7 @@ class ProfileAssetTests(unittest.TestCase):
         self.replace(f'<svg xmlns="http://www.w3.org/2000/svg">{content}</svg>')
 
     def test_complete_valid_assets(self):
-        self.assertEqual(assets.validate_assets(self.directory), 5)
+        self.assertEqual(assets.validate_assets(self.directory), 6)
 
     def test_missing_asset_blocks_publication(self):
         (self.directory / assets.EXPECTED_ASSETS[0]).unlink()
@@ -102,7 +102,7 @@ class ProfileAssetTests(unittest.TestCase):
         ]:
             with self.subTest(content=content):
                 self.replace_content(content)
-                self.assertEqual(assets.validate_assets(self.directory), 5)
+                self.assertEqual(assets.validate_assets(self.directory), 6)
 
     def test_error_messages_with_split_text_and_whitespace(self):
         for content in [
@@ -121,12 +121,31 @@ class ProfileAssetTests(unittest.TestCase):
         command = [sys.executable, '-B', str(Path(assets.__file__)), str(self.directory)]
         result = subprocess.run(command, capture_output=True, text=True)
         self.assertEqual(result.returncode, 0, result.stderr)
-        self.assertIn('Validated all 5', result.stdout)
+        self.assertIn('Validated all 6', result.stdout)
         self.replace_content('<text/>')
         result = subprocess.run(command, capture_output=True, text=True)
         self.assertEqual(result.returncode, 1)
         self.assertIn('no visible content', result.stderr)
         self.assertNotIn('Traceback', result.stderr)
+
+    def test_graph_only_update_requires_only_a_valid_graph(self):
+        for filename in assets.EXPECTED_ASSETS:
+            if filename != 'github-activity-graph.svg':
+                (self.directory / filename).unlink()
+        command = [sys.executable, '-B', str(Path(assets.__file__)), str(self.directory),
+                   '--asset', 'github-activity-graph.svg']
+        result = subprocess.run(command, capture_output=True, text=True)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn('1 requested profile SVGs', result.stdout)
+        # The full publication gate still requires every card.
+        with self.assertRaisesRegex(ValueError, 'Missing or empty'):
+            assets.validate_assets(self.directory)
+        (self.directory / 'github-activity-graph.svg').write_text(
+            '<svg xmlns="http://www.w3.org/2000/svg"><text>Service unavailable</text></svg>',
+            encoding='utf-8')
+        result = subprocess.run(command, capture_output=True, text=True)
+        self.assertEqual(result.returncode, 1)
+        self.assertIn('error card', result.stderr)
 
 
 if __name__ == '__main__':

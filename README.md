@@ -297,7 +297,7 @@ Design and delivery of production web platforms for real clients across industri
 
 <div align="center">
 
-<img alt="GitHub contribution activity graph" src="https://github-readme-activity-graph.vercel.app/graph?username=meetkapadia1710-tech&theme=github-compact" width="95%"/>
+<img alt="GitHub contribution activity over the last 31 days" src="https://raw.githubusercontent.com/meetkapadia1710-tech/meetkapadia1710-tech/output/github-activity-graph.svg" width="95%"/>
 
 </div>
 

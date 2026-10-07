@@ -1,0 +1,70 @@
+name: Update Contribution Activity
+
+on:
+  schedule:
+    # Refresh account-wide contributions every 15 minutes, away from the hour.
+    - cron: "7,22,37,52 * * * *"
+  push:
+    branches: [main]
+  repository_dispatch:
+    types: [contribution-activity]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Share the publishing lock with the full profile-card workflow.
+concurrency:
+  group: profile-cards
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+
+      - name: Generate contribution activity graph
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_USERNAME: ${{ github.repository_owner }}
+        run: python3 scripts/generate_activity_graph.py "$PROFILE_USERNAME"
+
+      - name: Validate activity graph
+        run: python3 scripts/validate_profile_assets.py dist --asset github-activity-graph.svg
+
+      - name: Upload validated activity graph
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: activity-graph
+          path: dist/github-activity-graph.svg
+          if-no-files-found: error
+          retention-days: 1
+
+  publish:
+    needs: generate
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - name: Download validated activity graph
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: activity-graph
+          path: dist
+
+      - name: Publish activity graph
+        uses: crazy-max/ghaction-github-pages@df5cc2bfa78282ded844b354faee141f06b41865 # v4
+        with:
+          target_branch: output
+          build_dir: dist
+          keep_history: true
+          allow_empty_commit: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

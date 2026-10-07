@@ -11,6 +11,7 @@ EXPECTED_ASSETS = (
     'github-stats.svg',
     'github-top-langs.svg',
     'github-streak-stats.svg',
+    'github-activity-graph.svg',
 )
 SVG = '{http://www.w3.org/2000/svg}'
 ERROR_MESSAGE = re.compile(
@@ -105,8 +106,8 @@ def has_visible_content(root):
     return visit(root)
 
 
-def validate_assets(directory):
-    for filename in EXPECTED_ASSETS:
+def validate_assets(directory, filenames=EXPECTED_ASSETS):
+    for filename in filenames:
         path = directory / filename
         if not path.is_file() or path.stat().st_size == 0:
             raise ValueError(f'Missing or empty profile asset: {path}')
@@ -121,18 +122,21 @@ def validate_assets(directory):
             raise ValueError(f'Generated an error card instead of profile data: {path}')
         if not has_visible_content(root):
             raise ValueError(f'SVG has no visible content: {path}')
-    return len(EXPECTED_ASSETS)
+    return len(filenames)
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('directory', nargs='?', type=Path, default=Path('dist'))
+    parser.add_argument('--asset', action='append', choices=EXPECTED_ASSETS,
+                        help='Validate only this asset; repeat for multiple assets')
     args = parser.parse_args()
     try:
-        count = validate_assets(args.directory)
+        count = validate_assets(args.directory, args.asset or EXPECTED_ASSETS)
     except (OSError, ValueError) as error:
         parser.exit(1, f'{error}\n')
-    print(f'Validated all {count} profile SVGs')
+    print(f'Validated all {count} requested profile SVGs' if args.asset
+          else f'Validated all {count} profile SVGs')
 
 
 if __name__ == '__main__':

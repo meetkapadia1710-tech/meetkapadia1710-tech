@@ -8,8 +8,8 @@ on:
     branches: [main]
     paths:
       - .github/workflows/snake.yml
-      - scripts/validate_profile_assets.py
-      - tests/test_profile_assets.py
+      - scripts/**
+      - tests/**
 
 permissions:
   contents: read
@@ -67,6 +67,12 @@ jobs:
           options: user=${{ github.repository_owner }}&theme=tokyonight&hide_border=true
           path: dist/github-streak-stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate contribution activity graph
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_USERNAME: ${{ github.repository_owner }}
+        run: python3 scripts/generate_activity_graph.py "$PROFILE_USERNAME"
 
       - name: Validate generated SVGs before publishing
         run: python3 scripts/validate_profile_assets.py dist
