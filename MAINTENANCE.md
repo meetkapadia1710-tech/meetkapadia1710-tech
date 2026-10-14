@@ -83,6 +83,21 @@ or ruleset settings.
 
 ## Troubleshooting
 
+### Header view counter
+
+The header uses [Hits](https://github.com/silentsoft/hits) for its live view counter.
+The former Komarev badge failed through GitHub's image proxy even when some direct
+requests succeeded. On 2026-10-14, its last readable total was 200; `extraCount=200`
+carries that total into the replacement counter. Keep this offset fixed, and keep
+the `github.com/meetkapadia1710-tech` counter path unchanged to retain future counts.
+Click the badge to open its statistics page.
+
+This badge counts image requests, not unique visitors. GitHub's image caching can
+delay updates. Keep it as a live external image: downloading it in the scheduled
+card workflow would count workflow requests instead of profile views.
+
+### Generated cards
+
 1. Open the failed Actions run and inspect the first failing step. Generation
    failures can involve API limits, credentials, or upstream dependency changes.
 2. For validation failures, inspect the generated SVG and reproduce the issue

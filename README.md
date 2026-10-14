@@ -20,7 +20,7 @@
 
 <br/><br/>
 
-<img alt="Profile view counter" src="https://komarev.com/ghpvc/?username=meetkapadia1710-tech&style=flat-square&color=8b5cf6&label=Profile+Views"/>
+<a href="https://hits.sh/github.com/meetkapadia1710-tech/"><img alt="Profile view counter" src="https://hits.sh/github.com/meetkapadia1710-tech.svg?style=flat-square&amp;label=Profile%20Views&amp;color=8b5cf6&amp;labelColor=1E1B4B&amp;extraCount=200"/></a>
 <img alt="GitHub followers" src="https://img.shields.io/github/followers/meetkapadia1710-tech?style=flat-square&color=7c3aed&labelColor=1E1B4B&label=Followers"/>
 <img alt="GitHub stars" src="https://img.shields.io/github/stars/meetkapadia1710-tech?style=flat-square&color=6d28d9&labelColor=1E1B4B&label=Stars"/>
 
